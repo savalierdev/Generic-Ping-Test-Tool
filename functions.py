@@ -117,7 +117,7 @@ gameservers.append(Service("ae1.er01.fra02.riotdirect.net", "Riot Games Frankfur
 gameservers.append(Service("ae3.er02.waw01.riotdirect.net", "Riot Games Warsaw"))
 gameservers.append(Service("ae8.er02.par01.riotdirect.net", "Riot Games Paris"))
 gameservers.append(Service("ae2.er02.sto01.riotdirect.net", "Riot Games Stockholm"))
-gameservers.append(Service("146.66.155.1", "Valve Corporation Vienna"))
+gameservers.append(Service("146.66.155.66", "Valve Corporation Vienna"))
 gameservers.append(Service("162.62.97.238", "PUBG Mobile Frankfurt"))
 gameservers.append(Service("145.239.131.35","TruckersMP France"))
 gameservers.append(Service("193.111.250.18","New Vision HvH CS2 Server"))
