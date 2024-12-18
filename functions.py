@@ -121,3 +121,7 @@ gameservers.append(Service("146.66.155.66", "Valve Corporation Vienna"))
 gameservers.append(Service("162.62.97.238", "PUBG Mobile Frankfurt"))
 gameservers.append(Service("145.239.131.35","TruckersMP France"))
 gameservers.append(Service("193.111.250.18","New Vision HvH CS2 Server"))
+
+# Create a list of DNS servers
+dnsservers.append(Service("1.1.1.1", "Cloudflare"))
+dnsservers.append(Service("8.8.8.8", "Google"))
