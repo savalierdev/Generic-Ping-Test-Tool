@@ -12,7 +12,8 @@ def MainTranslate():
         averageping = "Ortalama Ping: "
         packetloss = "Paket Kaybı: "
         pingjitter = "Ping Jitter Değeri: "
-        return pinging, invalidoperation, sendpackets, receivedpackets, lowestping, highestping, averageping, packetloss, pingjitter
+        pressanykeyexit = "Çıkmak için herhangi bir tuşa basın"
+        return pinging, invalidoperation, sendpackets, receivedpackets, lowestping, highestping, averageping, packetloss, pingjitter, pressanykeyexit
     elif languageselection == "English":
         pinging = "Pinging..."
         invalidoperation = "Invalid operation. Please select a valid operation."
@@ -22,7 +23,8 @@ def MainTranslate():
         highestping = "Highest Ping: "
         averageping = "Average Ping: "
         packetloss = "Packet Loss: "
-        return pinging, invalidoperation, sendpackets, receivedpackets, lowestping, highestping, averageping, packetloss
+        pressanykeyexit = "Press any key to exit"
+        return pinging, invalidoperation, sendpackets, receivedpackets, lowestping, highestping, averageping, packetloss,pressanykeyexit
     elif languageselection == "Arabic":
         pinging = "جاري العملية..."
         invalidoperation = "عمل غير صالح. يرجى تحديد عملية صالحة."
@@ -62,7 +64,8 @@ def MainTranslate():
         highestping = "Самый высокий пинг: "
         averageping = "Средний пинг: "
         packetloss = "Потеря пакетов: "
-        return pinging, invalidoperation, sendpackets, receivedpackets, lowestping, highestping, averageping, packetloss
+        pressanykeyexit = "Нажмите любую клавишу для выхода"
+        return pinging, invalidoperation, sendpackets, receivedpackets, lowestping, highestping, averageping, packetloss,pressanykeyexit
     
 
 def FunctionsTranslate():
