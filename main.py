@@ -4,9 +4,7 @@ from language import MainTranslate
 
 pinging, invalidoperation, sendpackets, receivedpackets, lowestping, highestping, averageping, packetloss,pingjitter,pressanykeyexit = MainTranslate()
 
-
-def ping():
-    print('')
+def ping(serviceip):
     print(f"{pinging} {serviceip}...", '\n')
     rresp = ping_server(serviceip)
     for index, rtt in enumerate(rresp.rtts, start=1):
@@ -34,7 +32,8 @@ if __name__ == '__main__':
     operation = getoperationinput()
     if operation:
         if operation == 1:
-            ping()
+            os.system('cls' if os.name == 'nt' else 'clear')
+            ping(serviceip)
         elif operation == 2:
             print("Traceroute is not available yet.")
     else:
