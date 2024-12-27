@@ -13,7 +13,8 @@ def MainTranslate():
         packetloss = "Paket Kaybı: "
         pingjitter = "Ping Jitter Değeri: "
         pressanykeyexit = "Çıkmak için herhangi bir tuşa basın"
-        return pinging, invalidoperation, sendpackets, receivedpackets, lowestping, highestping, averageping, packetloss, pingjitter, pressanykeyexit
+        request = "Ping"
+        return pinging, invalidoperation, sendpackets, receivedpackets, lowestping, highestping, averageping, packetloss, pingjitter, pressanykeyexit,request
     elif languageselection == "English":
         pinging = "Pinging..."
         invalidoperation = "Invalid operation. Please select a valid operation."
@@ -24,7 +25,8 @@ def MainTranslate():
         averageping = "Average Ping: "
         packetloss = "Packet Loss: "
         pressanykeyexit = "Press any key to exit"
-        return pinging, invalidoperation, sendpackets, receivedpackets, lowestping, highestping, averageping, packetloss,pressanykeyexit
+        request = "Ping"
+        return pinging, invalidoperation, sendpackets, receivedpackets, lowestping, highestping, averageping, packetloss,pressanykeyexit,request
     elif languageselection == "Arabic":
         pinging = "جاري العملية..."
         invalidoperation = "عمل غير صالح. يرجى تحديد عملية صالحة."
@@ -34,7 +36,8 @@ def MainTranslate():
         highestping = "أعلى بينغ: "
         averageping = "متوسط بينغ: "
         packetloss = "فقدان الحزم: "
-        return pinging, invalidoperation, sendpackets, receivedpackets, lowestping, highestping, averageping, packetloss
+        request = "بينغ"
+        return pinging, invalidoperation, sendpackets, receivedpackets, lowestping, highestping, averageping, packetloss,request
     elif languageselection == "Spanish":
         pinging = "Haciendo ping..."
         invalidoperation = "Operación no válida. Por favor seleccione una operación válida."
@@ -44,7 +47,8 @@ def MainTranslate():
         highestping = "Ping más alto: "
         averageping = "Ping promedio: "
         packetloss = "Pérdida de paquetes: "
-        return pinging, invalidoperation, sendpackets, receivedpackets, lowestping, highestping, averageping, packetloss
+        request = "Ping"
+        return pinging, invalidoperation, sendpackets, receivedpackets, lowestping, highestping, averageping, packetloss,request
     elif languageselection == "German":
         pinging = "Ping wird ausgeführt ..."
         invalidoperation = "Ungültiger Betrieb. Bitte wählen Sie einen gültigen Betrieb aus."
@@ -54,7 +58,8 @@ def MainTranslate():
         highestping = "Höchster Ping: "
         averageping = "Durchschnittlicher Ping: "
         packetloss = "Paketverlust: "
-        return pinging, invalidoperation, sendpackets, receivedpackets, lowestping, highestping, averageping, packetloss
+        request = "Ping"
+        return pinging, invalidoperation, sendpackets, receivedpackets, lowestping, highestping, averageping, packetloss,request
     elif languageselection == "Russian":
         pinging = "Выполняется пинг..."
         invalidoperation = "Недопустимая операция. Пожалуйста, выберите допустимую операцию."
@@ -65,7 +70,8 @@ def MainTranslate():
         averageping = "Средний пинг: "
         packetloss = "Потеря пакетов: "
         pressanykeyexit = "Нажмите любую клавишу для выхода"
-        return pinging, invalidoperation, sendpackets, receivedpackets, lowestping, highestping, averageping, packetloss,pressanykeyexit
+        request = "Пинг"
+        return pinging, invalidoperation, sendpackets, receivedpackets, lowestping, highestping, averageping, packetloss,pressanykeyexit,request
     
 
 def FunctionsTranslate():
@@ -76,4 +82,12 @@ def FunctionsTranslate():
         dnstestserver = "DNS Sunucuları"
         customtestserver = "Özel Sunucu"
         invalidcategory = "HATA : Geçersiz kategori numarası. Lütfen geçerli bir kategori numarası girin."
+        return turkishtestserver, globaltestserver, gametestserver, dnstestserver, customtestserver, invalidcategory
+    elif languageselection == "English":
+        turkishtestserver = "Turkish Test Servers"
+        globaltestserver = "Global Test Servers"
+        gametestserver = "Game Servers"
+        dnstestserver = "DNS Servers"
+        customtestserver = "Custom Server"
+        invalidcategory = "ERROR: Invalid category number. Please enter a valid category number."
         return turkishtestserver, globaltestserver, gametestserver, dnstestserver, customtestserver, invalidcategory

@@ -2,13 +2,13 @@ from functions import *
 from language import MainTranslate
 
 
-pinging, invalidoperation, sendpackets, receivedpackets, lowestping, highestping, averageping, packetloss,pingjitter,pressanykeyexit = MainTranslate()
+pinging, invalidoperation, sendpackets, receivedpackets, lowestping, highestping, averageping, packetloss,pingjitter,pressanykeyexit,request = MainTranslate()
 
 def ping(serviceip):
     print(f"{pinging} {serviceip}...", '\n')
     rresp = ping_server(serviceip)
     for index, rtt in enumerate(rresp.rtts, start=1):
-        print(f'{index}. {rtt} ms')
+        print(f'{index} {request}. {rtt} ms')
     print('')
     print(f"{sendpackets} {rresp.packets_sent}") , '\n'
     print(f"{receivedpackets} {rresp.packets_received}") , '\n'

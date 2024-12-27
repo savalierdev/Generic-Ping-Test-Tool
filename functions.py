@@ -57,21 +57,20 @@ class Service(object):
 
 def getserviceinput(catnum: int):
     service = int(input("Enter the number of the platform you want to test: "))
-    if catnum == 0:
-        ipnumber = turkishservices[service-1].ip
-        return ipnumber
-    elif catnum == 1:
-        ipnumber = globalservices[service-1].ip
-        return ipnumber
-    elif catnum == 2:
-        ipnumber = gameservers[service-1].ip
-        return ipnumber
-    elif catnum == 3:
-        ipnumber = dnsservers[service-1].ip
-        return ipnumber
-    elif catnum == 4:
-        ipnumber = input("Enter the IP address you want to test: ")
-        return ipnumber
+    match catnum:
+        case 0:
+            ipnumber = turkishservices[service-1].ip
+        case 1:
+            ipnumber = globalservices[service-1].ip
+        case 2:
+            ipnumber = gameservers[service-1].ip
+        case 3:
+            ipnumber = dnsservers[service-1].ip
+        case 4:
+            ipnumber = input("Enter the IP address you want to test: ")
+        case _:
+            ipnumber = None
+    return ipnumber
 
 def getoperationinput():
     os.system('cls' if os.name == 'nt' else 'clear')
