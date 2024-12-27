@@ -83,16 +83,6 @@ def resolveip(ip: str):
     pass
 
 
-def ping_server(ip: str):
-    try:
-        response = icmplib.ping(ip, count=5, interval=0.2,timeout=2,privileged=True,payload_size=32)
-        return response
-    except Exception:
-        return False
-    
-def traceroute_server(ip: str):
-    pass
-
 globalservices = []
 turkishservices = []
 gameservers = []

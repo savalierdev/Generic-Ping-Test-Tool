@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "../IP-Range-Pingable-Tester"
+		},
+		{
+			"path": "."
+		},
+		{
+			"path": "../REWORKS/icmplib"
+		}
+	],
+	"settings": {}
+}

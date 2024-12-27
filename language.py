@@ -4,6 +4,7 @@ languageselection = "Turkish" # Change this to the language you want to use. Opt
 def MainTranslate():
     if languageselection == "Turkish":
         pinging = "Ping atılıyor..."
+        traceroutevar = "Traceroute atılıyor..."
         invalidoperation = "Geçersiz işlem. Lütfen geçerli bir işlem seçin"
         sendpackets = "Gönderilen Paket Sayısı: "
         receivedpackets = "Alınan Paket Sayısı: "
@@ -14,9 +15,10 @@ def MainTranslate():
         pingjitter = "Ping Jitter Değeri: "
         pressanykeyexit = "Çıkmak için herhangi bir tuşa basın"
         request = "Ping"
-        return pinging, invalidoperation, sendpackets, receivedpackets, lowestping, highestping, averageping, packetloss, pingjitter, pressanykeyexit,request
+        return pinging, invalidoperation, sendpackets, receivedpackets, lowestping, highestping, averageping, packetloss, pingjitter, pressanykeyexit,request,traceroutevar
     elif languageselection == "English":
         pinging = "Pinging..."
+        traceroutevar = "Tracerouting..."
         invalidoperation = "Invalid operation. Please select a valid operation."
         sendpackets = "Packets Sent: "
         receivedpackets = "Packets Received: "
@@ -26,7 +28,7 @@ def MainTranslate():
         packetloss = "Packet Loss: "
         pressanykeyexit = "Press any key to exit"
         request = "Ping"
-        return pinging, invalidoperation, sendpackets, receivedpackets, lowestping, highestping, averageping, packetloss,pressanykeyexit,request
+        return pinging, invalidoperation, sendpackets, receivedpackets, lowestping, highestping, averageping, packetloss,pressanykeyexit,request,traceroutevar
     elif languageselection == "Arabic":
         pinging = "جاري العملية..."
         invalidoperation = "عمل غير صالح. يرجى تحديد عملية صالحة."
