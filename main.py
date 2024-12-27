@@ -91,6 +91,7 @@ def advancedping(ip:str,count:4,interval=1,timeout=2,id=PID):
         print(f'\n--- {ip} ping statistics ---')
         print(f'{count} packets transmitted, {len(rtts)} received, {round((count - len(rtts)) / count * 100, 1)}% packet loss')
         print(f'round-trip min/avg/max = {min}/{avg}/{max} ms')
+        print(f'jitter = {jitter} ms')
 
 def advancedtracert(ip:str,interval=1,id=PID):
     pass
